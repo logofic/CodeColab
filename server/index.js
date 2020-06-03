@@ -9,7 +9,7 @@ const { addUser, removeUser, findUser, usersInRoom } = require("./users");
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to CodeRigade server</h1>");
+  res.send("<h1>Welcome to CodeColab server</h1>");
 });
 
 io.on("connection", (socket) => {
